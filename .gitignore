@@ -1,0 +1,4 @@
+.nsh/
+dist/
+node_modules/
+.openai/local*

@@ -1,0 +1,14 @@
+{
+  "name": "xinread-nsh",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "dev": "node --use-env-proxy scripts/dev.mjs"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}

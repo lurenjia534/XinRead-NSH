@@ -1,0 +1,43 @@
+{
+  "name": "XinRead",
+  "id": "app.miku.xinread",
+  "version": "0.1.0",
+  "build": 1,
+  "icon": "assets/icon.png",
+  "locales": [
+    "zh-CN"
+  ],
+  "window": {
+    "title": "小信阅读",
+    "defaultSize": {
+      "width": 1100,
+      "height": 780
+    }
+  },
+  "capabilities": {
+    "host": [
+      "reader.*"
+    ],
+    "webview": {
+      "hosts": [
+        "weread.qq.com"
+      ]
+    },
+    "network": {
+      "hosts": [
+        "cdn.weread.qq.com",
+        "res.weread.qq.com",
+        "wfqqreader-1252317822.image.myqcloud.com"
+      ]
+    }
+  },
+  "web": {
+    "host": "web/host.js",
+    "connect": [
+      "weread.qq.com",
+      "*.weread.qq.com",
+      "*.image.myqcloud.com"
+    ],
+    "history": false
+  }
+}
